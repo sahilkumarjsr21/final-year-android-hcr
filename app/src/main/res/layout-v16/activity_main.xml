@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="org.komamitsu.android_ocrsample.MainActivity">
+
+
+
+    <TextView
+        android:id="@+id/detected_text"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/linearLayout"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="25dp"
+        android:layout_weight="1"
+        android:background="#EEEEEE"
+        android:fontFamily="@font/googlesans_regular"
+        android:scrollbars="vertical"
+        android:text="qqeq121easda"
+        android:textSize="20sp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/emptyText"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="25dp"
+        android:layout_weight="1"
+        android:fontFamily="@font/googlesans_regular"
+        android:gravity="center"
+        android:visibility="visible"
+        android:text="Click on camera \nOr\nChoose from gallery."
+        android:textSize="40sp" />
+
+    <RelativeLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/choose_from_gallery">
+
+        <Button
+            android:id="@+id/speachButton"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="30dp"
+            android:background="@drawable/ic_baseline_record_voice_over_24"
+            android:backgroundTint="#0097a7"/>
+
+        <Button
+            android:id="@+id/take_a_photo"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:background="@drawable/ic_baseline_camera_24"
+            tools:context=".MainActivity"
+            android:backgroundTint="#0097a7"/>
+
+        <Button
+            android:id="@+id/choose_from_gallery"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/ic_baseline_photo_library_24"
+            tools:context=".MainActivity"
+            android:backgroundTint="#0097a7"/>
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>
